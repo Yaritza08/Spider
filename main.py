@@ -10,17 +10,17 @@ spider.pensize(40)
 spider.circle(20)
 
 # Set legs to the number of legs you want on your spider
-legs = 6
+legs = 8
 # Set length to the length you want for the legs
 length = 70
 # Set angle to the direction you want your legs to go out
-angle = 380 / legs
+angle = 360 / legs
 spider.pensize(5)
 # Set count to make it less than the number of legs to activate the loop
 #The loop will run from count until it reaches the number of legs - Choose a count depending on how many loops you want the program to run
 count = 0
 while (count < legs):
-  spider.goto(0,0) # Set coordinates to the center of the spider's body
+  spider.goto(0,20) # Set coordinates to the center of the spider's body
   spider.setheading(angle*count) #This is the direction of the legs
   spider.forward(length) # How long it goes forward
   count = count + 1 # Creating increments
